@@ -3,7 +3,7 @@ import useItems from '../hooks/useItems'
 import ItemForm from './ItemForm'
 
 export default function ListPage(){
-  const { items, loading, error, add, remove } = useItems()
+  const { items, loading, error, add, edit, remove } = useItems()
   const [editing, setEditing] = useState(null)
 
   return (
@@ -26,7 +26,7 @@ export default function ListPage(){
       {editing && (
         <div style={{marginTop:20}}>
           <h3>Edit</h3>
-          <ItemForm initial={editing} onSubmit={async (data)=>{/* TODO: wire edit */}} />
+          <ItemForm initial={editing} onSubmit={async (data)=>{ await edit(editing.id, data); setEditing(null); }} />
         </div>
       )}
     </div>
