@@ -1,0 +1,33 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Env / Secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# Node / build artifacts (if any)
+node_modules/
+dist/
+build/
+.cache/
+parcel-cache/
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Temporary / backup
+*.tmp
+*.temp
+*.bak
+
+# macOS Finder
+.Icon?
