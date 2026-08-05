@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Masuk | Chill</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body class="login-page">
+
+<main class="login-container">
+
+<section class="login-card">
+
+<div class="logo">
+<img src="images/logo.png" alt="Logo Chill">
+</div>
+
+<div class="login-title">
+<h1>Masuk</h1>
+<p>Selamat datang kembali!</p>
+</div>
+
+<form id="loginForm">
+
+<div class="input-group">
+
+<label>Username</label>
+
+<input
+type="text"
+name="username"
+placeholder="Masukkan username"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Kata Sandi</label>
+
+<div class="password-box">
+
+<input
+type="password"
+name="password"
+placeholder="Masukkan kata sandi"
+required>
+
+<img src="images/eye-off.png" alt="Password Toggle">
+
+</div>
+
+</div>
+
+<div class="login-links">
+
+<p>
+Belum punya akun?
+<a href="register.html"> Daftar</a>
+</p>
+
+<a href="#" id="forgotPasswordLink">
+Lupa kata sandi?
+</a>
+
+</div>
+
+<button class="btn-login" type="submit">
+Masuk
+</button>
+
+<p class="separator">
+Atau
+</p>
+
+<button class="btn-google" type="button" id="googleLoginBtn">
+
+<img src="images/google.png" alt="Google">
+
+Masuk dengan Google
+
+</button>
+
+</form>
+
+</section>
+
+</main>
+
+<!-- ================= FORGOT PASSWORD MODAL ================= -->
+
+<div id="forgotPasswordModal" class="modal">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+            <h2>Lupa Kata Sandi</h2>
+            <button class="modal-close" id="closeModalBtn">✕</button>
+        </div>
+
+        <div class="modal-body">
+            <p>Masukkan email atau username Anda untuk menerima link reset password.</p>
+
+            <form id="forgotPasswordForm">
+
+                <div class="input-group">
+                    <label>Email atau Username</label>
+                    <input 
+                        type="text" 
+                        name="emailOrUsername" 
+                        placeholder="Masukkan email atau username" 
+                        required>
+                </div>
+
+                <button class="btn-primary-modal" type="submit">Kirim Link Reset</button>
+
+            </form>
+        </div>
+
+        <div class="modal-footer">
+            <p>Ingat password Anda? <a href="#" class="back-to-login">Kembali ke Login</a></p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Script -->
+<script src="script.js"></script>
+
+</body>
+</html>

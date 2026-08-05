@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil Saya | Chill</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="settings-pages.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="header-left">
+
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo Chill" class="logo">
+            </a>
+
+            <nav class="navbar">
+                <a href="index.html#series">Series</a>
+                <a href="index.html#film">Film</a>
+                <a href="index.html#mylist">Daftar Saya</a>
+            </nav>
+
+        </div>
+
+        <div class="profile">
+
+            <img src="images/avatar.png" alt="Avatar Profil">
+
+            <span>▼</span>
+
+        </div>
+
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="content">
+
+        <section class="profile-section">
+
+            <div class="profile-container">
+
+                <h1>Profil Saya</h1>
+
+                <div class="profile-card">
+
+                    <div class="profile-header">
+                        <img src="images/avatar.png" alt="Avatar" class="profile-avatar">
+                        <div class="profile-info">
+                            <h2>Fadya Developer</h2>
+                            <p>fadya@example.com</p>
+                            <p class="member-since">Bergabung sejak: 15 Januari 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="profile-details">
+
+                        <div class="detail-section">
+                            <h3>Informasi Akun</h3>
+                            <div class="detail-item">
+                                <label>Nama Lengkap:</label>
+                                <p>Fadya Developer</p>
+                            </div>
+                            <div class="detail-item">
+                                <label>Email:</label>
+                                <p>fadya@example.com</p>
+                            </div>
+                            <div class="detail-item">
+                                <label>Username:</label>
+                                <p>fadya_dev</p>
+                            </div>
+                            <div class="detail-item">
+                                <label>Nomor Telepon:</label>
+                                <p>+62 812-3456-7890</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Statistik</h3>
+                            <div class="stats-grid">
+                                <div class="stat-box">
+                                    <div class="stat-number">24</div>
+                                    <div class="stat-label">Film Ditonton</div>
+                                </div>
+                                <div class="stat-box">
+                                    <div class="stat-number">8</div>
+                                    <div class="stat-label">Series Ditonton</div>
+                                </div>
+                                <div class="stat-box">
+                                    <div class="stat-number">15</div>
+                                    <div class="stat-label">Film Favorit</div>
+                                </div>
+                                <div class="stat-box">
+                                    <div class="stat-number">5</div>
+                                    <div class="stat-label">Series Favorit</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Aksi Cepat</h3>
+                            <div class="action-buttons">
+                                <button class="action-btn" onclick="showNotification('📝 Membuka Edit Profil...', 'info')">Edit Profil</button>
+                                <button class="action-btn" onclick="showNotification('🔑 Membuka Ubah Password...', 'info')">Ubah Password</button>
+                                <button class="action-btn logout-btn" onclick="showNotification('👋 Logging out...', 'info'); setTimeout(() => window.location.href='login.html', 1500);">Keluar</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="back-button">
+                    <a href="index.html">← Kembali ke Beranda</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Logo Chill">
+                <p>Chill adalah platform streaming terbaik untuk film dan series favorit kamu. Nikmati ribuan konten premium dengan kualitas terbaik.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Genre</h3>
+                <ul>
+                    <li><a href="action.html">Action</a></li>
+                    <li><a href="comedy.html">Comedy</a></li>
+                    <li><a href="drama.html">Drama</a></li>
+                    <li><a href="horror.html">Horror</a></li>
+                    <li><a href="scifi.html">Sci-Fi</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Bantuan</h3>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="help.html">Kontak Kami</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy.html">Privasi</a></li>
+                    <li><a href="terms.html">Syarat & Ketentuan</a></li>
+                    <li><a href="cookies.html">Kebijakan Cookies</a></li>
+                    <li><a href="license.html">Lisensi</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-divider">
+
+            <div class="footer-bottom">
+
+                <div class="footer-copyright">
+                    © 2024 Chill. All rights reserved.
+                </div>
+
+                <div class="footer-social">
+                    <a href="#">f</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">📷</a>
+                    <a href="#">▶</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

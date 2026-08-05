@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pengaturan | Chill</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="settings-pages.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="header-left">
+
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo Chill" class="logo">
+            </a>
+
+            <nav class="navbar">
+                <a href="index.html#series">Series</a>
+                <a href="index.html#film">Film</a>
+                <a href="index.html#mylist">Daftar Saya</a>
+            </nav>
+
+        </div>
+
+        <div class="profile">
+
+            <img src="images/avatar.png" alt="Avatar Profil">
+
+            <span>▼</span>
+
+        </div>
+
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="content">
+
+        <section class="settings-section">
+
+            <div class="settings-container">
+
+                <h1>Pengaturan</h1>
+
+                <div class="settings-grid">
+
+                    <!-- Account Settings -->
+                    <div class="settings-card">
+                        <div class="settings-icon">👤</div>
+                        <h3>Profil Akun</h3>
+                        <p>Kelola informasi profil dan data pribadi Anda</p>
+                        <button class="settings-btn" onclick="showNotification('📝 Membuka Profil Akun...', 'info')">Buka</button>
+                    </div>
+
+                    <!-- Password Settings -->
+                    <div class="settings-card">
+                        <div class="settings-icon">🔐</div>
+                        <h3>Ubah Kata Sandi</h3>
+                        <p>Perbarui kata sandi akun Anda untuk keamanan lebih</p>
+                        <button class="settings-btn" onclick="showNotification('🔑 Membuka Ubah Kata Sandi...', 'info')">Buka</button>
+                    </div>
+
+                    <!-- Notification Settings -->
+                    <div class="settings-card">
+                        <div class="settings-icon">🔔</div>
+                        <h3>Notifikasi</h3>
+                        <p>Atur preferensi notifikasi dan email</p>
+                        <button class="settings-btn" onclick="showNotification('📢 Membuka Pengaturan Notifikasi...', 'info')">Buka</button>
+                    </div>
+
+                    <!-- Privacy Settings -->
+                    <div class="settings-card">
+                        <div class="settings-icon">🔒</div>
+                        <h3>Privasi</h3>
+                        <p>Kontrol preferensi privasi Anda</p>
+                        <button class="settings-btn" onclick="showNotification('🛡️ Membuka Pengaturan Privasi...', 'info')">Buka</button>
+                    </div>
+
+                    <!-- Video Quality -->
+                    <div class="settings-card">
+                        <div class="settings-icon">🎬</div>
+                        <h3>Kualitas Video</h3>
+                        <p>Pilih kualitas pemutaran video default Anda</p>
+                        <button class="settings-btn" onclick="showNotification('📺 Membuka Pengaturan Kualitas Video...', 'info')">Buka</button>
+                    </div>
+
+                    <!-- Language Settings -->
+                    <div class="settings-card">
+                        <div class="settings-icon">🌐</div>
+                        <h3>Bahasa</h3>
+                        <p>Pilih bahasa tampilan aplikasi</p>
+                        <button class="settings-btn" onclick="showNotification('🗣️ Membuka Pengaturan Bahasa...', 'info')">Buka</button>
+                    </div>
+
+                    <!-- Download Settings -->
+                    <div class="settings-card">
+                        <div class="settings-icon">⬇️</div>
+                        <h3>Unduhan</h3>
+                        <p>Atur preferensi dan lokasi unduhan konten</p>
+                        <button class="settings-btn" onclick="showNotification('💾 Membuka Pengaturan Unduhan...', 'info')">Buka</button>
+                    </div>
+
+                    <!-- Device Management -->
+                    <div class="settings-card">
+                        <div class="settings-icon">📱</div>
+                        <h3>Perangkat</h3>
+                        <p>Kelola perangkat yang terhubung dengan akun Anda</p>
+                        <button class="settings-btn" onclick="showNotification('🖥️ Membuka Manajemen Perangkat...', 'info')">Buka</button>
+                    </div>
+
+                </div>
+
+                <div class="back-button">
+                    <a href="index.html">← Kembali ke Beranda</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Logo Chill">
+                <p>Chill adalah platform streaming terbaik untuk film dan series favorit kamu. Nikmati ribuan konten premium dengan kualitas terbaik.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Genre</h3>
+                <ul>
+                    <li><a href="action.html">Action</a></li>
+                    <li><a href="comedy.html">Comedy</a></li>
+                    <li><a href="drama.html">Drama</a></li>
+                    <li><a href="horror.html">Horror</a></li>
+                    <li><a href="scifi.html">Sci-Fi</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Bantuan</h3>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="help.html">Kontak Kami</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy.html">Privasi</a></li>
+                    <li><a href="terms.html">Syarat & Ketentuan</a></li>
+                    <li><a href="cookies.html">Kebijakan Cookies</a></li>
+                    <li><a href="license.html">Lisensi</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-divider">
+
+            <div class="footer-bottom">
+
+                <div class="footer-copyright">
+                    © 2024 Chill. All rights reserved.
+                </div>
+
+                <div class="footer-social">
+                    <a href="#">f</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">📷</a>
+                    <a href="#">▶</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

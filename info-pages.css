@@ -1,0 +1,512 @@
+/* Variables */
+:root {
+    --white: #FFFFFF;
+    --text-secondary: #C1C2C4;
+    --border: rgba(231, 227, 252, 0.23);
+    --primary: #3254FF;
+    --bg-dark: #181A1C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: var(--bg-dark);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: var(--bg-dark);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--border);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    gap: 36px;
+}
+
+.navbar a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--primary);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.profile:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile span {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* Content */
+.content {
+    width: 100%;
+    min-height: calc(100vh - 200px);
+}
+
+.info-section {
+    padding: 60px;
+    margin-bottom: 40px;
+}
+
+.info-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.info-container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--white);
+}
+
+.info-container h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: var(--white);
+}
+
+.info-container p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    line-height: 1.8;
+}
+
+.info-container ul,
+.info-container ol {
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
+
+.info-container li {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+.info-container a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.info-container a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* Content Boxes */
+.info-content,
+.help-content,
+.support-content,
+.privacy-content,
+.terms-content,
+.cookies-content,
+.license-content {
+    margin-top: 32px;
+}
+
+.faq-item,
+.support-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+    transition: all 0.3s;
+}
+
+.faq-item:hover,
+.support-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--primary);
+}
+
+.faq-item h3,
+.support-item h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.faq-item p,
+.support-item p {
+    margin-bottom: 0;
+}
+
+/* Highlight Boxes */
+.highlight {
+    background: rgba(50, 84, 255, 0.1);
+    border: 1px solid rgba(50, 84, 255, 0.3);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 24px;
+}
+
+.highlight strong {
+    color: var(--primary);
+    font-size: 18px;
+}
+
+.highlight p {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+/* List Styling */
+.help-list,
+.cookies-list {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid var(--primary);
+    padding: 24px;
+    border-radius: 8px;
+    margin: 24px 0;
+}
+
+.help-list li,
+.cookies-list li {
+    margin-left: 0;
+}
+
+/* Support Note */
+.support-note {
+    background: rgba(50, 84, 255, 0.15);
+    border: 2px solid var(--primary);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 32px;
+}
+
+.support-note p {
+    margin: 0;
+}
+
+.support-note span {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 48px;
+    padding: 12px 32px;
+    background: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 24px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.back-btn:hover {
+    background: #254ACC;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background: rgba(24, 26, 28, 0.95);
+    border-top: 1px solid var(--border);
+    padding: 60px;
+    margin-top: 80px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+.footer-logo p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--white);
+}
+
+.footer-section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-section a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: var(--primary);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+}
+
+.footer-copyright {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.footer-social a:hover {
+    background: var(--primary);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .header {
+        padding: 16px 30px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header-left {
+        gap: 30px;
+        width: 100%;
+    }
+
+    .navbar {
+        gap: 20px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .info-section {
+        padding: 40px 30px;
+    }
+
+    .info-container h1 {
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+
+    .info-container h2 {
+        font-size: 22px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .header {
+        padding: 12px 16px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .header-left {
+        gap: 16px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar {
+        width: 100%;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .profile img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .info-section {
+        padding: 24px 16px;
+    }
+
+    .info-container h1 {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+    .info-container h2 {
+        font-size: 18px;
+        margin-top: 24px;
+    }
+
+    .info-container p {
+        font-size: 14px;
+    }
+
+    .info-container li {
+        font-size: 14px;
+    }
+
+    .faq-item,
+    .support-item {
+        padding: 16px;
+    }
+
+    .faq-item h3,
+    .support-item h2 {
+        font-size: 16px;
+    }
+
+    .help-content,
+    .support-content,
+    .privacy-content,
+    .terms-content,
+    .cookies-content,
+    .license-content {
+        padding: 20px;
+    }
+
+    .back-btn {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 24px 16px;
+        margin-top: 40px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .footer-logo img {
+        width: 100px;
+    }
+
+    .footer-section h3 {
+        font-size: 14px;
+    }
+
+    .footer-section a {
+        font-size: 12px;
+    }
+
+    .footer-copyright {
+        font-size: 12px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
